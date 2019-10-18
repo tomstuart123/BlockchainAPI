@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- <link href="//db.onlinewebfonts.com/c/2b75c8e61f3e0a99d45d4a30a0bdc888?family=Neuzeit+Office+Soft+Rounded" rel="stylesheet" type="text/css"/>  -->
+    <title>JS Project</title>
+</head>
+
+<body>
+    <header>
+        <header class='section-hero'>
+            <nav class="navigation-top">
+
+                <ul class="toolbar-left">
+                    <h1> BIT/RIC </h1>
+                </ul>
+
+                <ul class="toolbar">
+                    <li class="list-item-horizontal"><a href="#about" class="link-top">ABOUT</a></li>
+                    <li class="list-item-horizontal"><a href="#thesis" class="link-top">THESIS</a></li>
+                    <li class="list-item-horizontal"><a href="#data" class="link-top">DATA</a></li>
+                </ul>
+
+                <ul class="toolbar-right">
+                    <li class="list-item-horizontal"><a href="#contact" class="link-top" id='contact'>CONTACT</a></li>
+                </ul>
+
+            </nav>
+            <section>
+                <section class='hero-text-section'>
+                    <article id="hero-text"> Less is more when its BTC insights</article>
+                    <button class='btn-generic' id='header-btn'> Go to our thesis page to see why </button>
+                </section>
+            </section>
+
+        </header>
+
+        <section class='about-text-section'>
+            <article id="about-text"> At BitMetric we believe what data you choose to ignore, is just as important as
+                what you choose to track. So, we have done you a solid and pulled only the most important Bitcoin data
+                below. No huge filterable price charts here. Just 5 data points with insights based on a common
+                valuation approach used by VCs.
+
+            </article>
+            <section class='visuals-holder'>
+                <section class='icon-holder'>
+                    <img src='assets/icons8-area-chart-100.png'>
+                    <p class=''> Data</p>
+                </section>
+                <section class='icon-holder'>
+                    <img src='assets/plus.jpg'>
+                </section>
+                <section class='icon-holder'>
+                    <img src='assets/icons8-customer-insight-100.png'>
+                    <p>Analysis</p>
+                </section>
+                <section class='maths-holder'>
+                    <img src='assets/equals.png'>
+                </section>
+                <section class='icon-holder'>
+                    <img src='assets/icons8-bitcoin-128.png'>
+                    <p> Insight</p>
+                </section>
+            </section>
+        </section>
+        <section class='data-holder'>
+            <section id="new-data-section">
+                <h1 class='data-section-title'> Question 1: What is the Total Market Size Available for BTC? </h1>
+                <p class='data-section-sub'> (data - BTC Market Capitalisation as % of the Current Gold Market) </p>
+                <section id="my-chart">
+                    <canvas id="market-size-chart" width="600" height="500"></canvas>
+                </section>
+
+
+                <button class='market-size-btn' id='1-months-btn'> 1 month </button>
+                <button class='market-size-btn' id='3-months-btn'> 3 months </button>
+                <button class='market-size-btn' id='1-years-btn'> 1 year </button>
+                <button class='market-size-btn' id='2-years-btn'> 2 years </button>
+                <button class='market-size-btn' id='5-years-btn'> 5 years </button>
+
+
+                <section class='title-section'>
+                    <p class='cross-page-text'> <strong> Reason for Inclusion </strong> The first question any good VC
+                        will ask pre-investment is 'What is the size of the market' and 'how much can the new solution
+                        take of this market'. Applying this to Bitcoin, it must be said that over the last 2 years, its
+                        credentials as a medium of exchange have been questioned by some in the community (see the
+                        Bitcoin hard forks as well as the launch of stable coins like Facebook's Libra). However, few in
+                        the industry debate its role as the digital store of value play for the internet genertion due
+                        to its first move advantage and limited supply. As an example, even if all the Millionaires in
+                        the world wanted to own 1 BTC, there wouldn't be enough to go around. I am a big believer in
+                        this thesis, and thus, when thinking about what Bitcoin could look like in the future I like to
+                        use the chart above. This is essentially Bitcoin's market capitalisaiton but when you compare it
+                        to the most recent estimates for Gold's global value
+                        you get a good idea of how much growth could still be on the way. Even if Crypto takes 20% of
+                        the gold market, you are still looking at 10x growth <br><br> <strong> Our Current Confidence:</strong> COMING SOON </p>
+                        
+                </section>
+            </section>
+            <section id="new-data-section">
+                <h1 class='data-section-title'> Q2: How likely is it that it will be BTC to take this opportunity? </h1>
+                <p class='data-section-sub'> (data - Total $ transacted on the top few 'Store of Value' Currency
+                    Blockchains) </p>
+                <section id="my-chart">
+                    <canvas id="competitor-chart" width="600" height="500"></canvas>
+                </section>
+
+
+
+                <button class='competitor-btn' id='1-months-btn'> 1 month </button>
+                <button class='competitor-btn' id='3-months-btn'> 3 months </button>
+                <button class='competitor-btn' id='1-years-btn'> 1 year </button>
+                <button class='competitor-btn' id='2-years-btn'> 2 years </button>
+                <button class='competitor-btn' id='5-years-btn'> 5 years </button>
+
+
+                <section class='title-section'>
+                    <p class='cross-page-text'> <strong> Reason for Inclusion </strong> As you can see, I have kept this
+                        site Bitcoin focused. However, you can't look at the currency in isolation. Even if the market
+                        is huge for a store of value or medium of exchange, any investor should ask the hard-queston:
+                        'Will Bitcoin rather than one of the following currencies be the one that is actually used daily
+                        by people in 2040'. This is of course a detailed answer and cannot be pulled out in one graph.
+                        However, here I have pulled out some competitors to Bitcoin based on the metric of actual usage
+                        (note to readers - it sounds obvious but so many people still overlook at current price
+                        movements when looking for investment value). I've chosed the actual dollar amount of transactions made per day. This gives an idea of how many people are confident putting their money into the network as a 'Store of value' <br><br> <strong> Our Current Confidence:</strong> COMING SOON</p>
+                </section>
+            </section>
+        </section>
+        <section class='data-holder'>
+            <section id="new-data-section">
+                <h1 class='data-section-title'> Q3: What is the Traction among real Customers? </h1>
+                <p class='data-section-sub'> (data - Number of Unique Bitcoin Addresses or 'Users') </p>
+                <section id="my-chart">
+                    <canvas id="user-chart" width="600" height="500"></canvas>
+                </section>
+
+
+                <button class='users-btn' id='1-months-btn'> 1 month </button>
+                <button class='users-btn' id='3-months-btn'> 3 months </button>
+                <button class='users-btn' id='1-years-btn'> 1 year </button>
+                <button class='users-btn' id='2-years-btn'> 2 years </button>
+                <button class='users-btn' id='5-years-btn'> 5 years </button>
+
+
+                <section class='title-section'>
+                    <p class='cross-page-text' id='bottom-cross-page-text'> <strong> Reason for Inclusion </strong> At
+                        some stage, every investor should ask about actual usage or - as I like to call it - traction
+                        with customers. To be honest, I'm still yet to see many real use cases for Bitcoin (as a side
+                        note see the thesis page for one of my favourites from Ukraine). The first traction metric should always be number of
+                        unique users (i.e. not one person with multiple accounts). Regardless of what vision of Bitcoin
+                        you believe in - medium of exchange or store of value - for it to become prominent it will need
+                        to be adopted by a large proportion of the planet. Note, even if we hit 10m users, it will still be a tiny proportion of the U.S. (327m) let alone the 7bn population of the globe <br><br> <strong> Our Current Confidence:</strong> COMING SOON</p>
+                </section>
+            </section>
+            <section id="new-data-section">
+                <h1 class='data-section-title'> Q4: What is the traction among customers and do people use it? </h1>
+                <p class='data-section-sub'> (data - Transactions per user per day of BTC excluding the Top 100
+                    addresses) </p>
+
+                <section id="my-chart">
+                    <canvas id="transactions-user-chart" width="600" height="500"></canvas>
+                </section>
+
+                <button class='transactions-user-btn' id='1-months-btn'> 1 month </button>
+                <button class='transactions-user-btn' id='3-months-btn'> 3 months </button>
+                <button class='transactions-user-btn' id='1-years-btn'> 1 year </button>
+                <button class='transactions-user-btn' id='2-years-btn'> 2 years </button>
+                <button class='transactions-user-btn' id='5-years-btn'> 5 years </button>
+
+                <section class='title-section'>
+                    <p class='cross-page-text' id='bottom-cross-page-text'> <strong> Reason for inclusion: </strong> The
+                        other key traction metric for me are transaction per user. Even if you belive that Bitcoin is a
+                        store of value more than a medium of exchange, it doesn't matter if a lot of people own the
+                        coins if no one is buying and selling. Rather than looking at this figure as an absolute number, it's great to look at it per individual. As an example, the fact that every customer doesn't even transact BTC once a day (even when we aren't including the Top 100 addresses) shows we still have a long way to hit real use cases <br><br> <strong> Our Current Confidence:</strong> COMING SOON</p>
+                </section>
+            </section>
+            <section class='data-holder'>
+            <section id="new-data-section">
+                <h1 class='data-section-title'> Question 5: Who are the team and will they win? </h1>
+                <p class='data-section-sub'> (data - BTC 'hash rate' as a proxy for number of miners on the network) </p>
+                <section id="my-chart">
+                    <canvas id="hash-chart" width="600" height="500"></canvas>
+                </section>
+
+
+                <button class='hash-btn' id='1-months-btn'> 1 month </button>
+                <button class='hash-btn' id='3-months-btn'> 3 months </button>
+                <button class='hash-btn' id='1-years-btn'> 1 year </button>
+                <button class='hash-btn' id='2-years-btn'> 2 years </button>
+                <button class='hash-btn' id='5-years-btn'> 5 years </button>
+
+
+                <section class='title-section'>
+                    <p class='cross-page-text'> <strong> Reason for Inclusion </strong> 
+                        The team is always the deciding factor for any start up investment. Who are the team? Is the team maturing or growing? These questions are always the most subjective part of a venture capital team's analysis. Putting this into hard data for BTC isn't easy and in the thesis page I can point you to more qualititive articles around BTC's development community vs. others. For the purposes of this page though, I have pulled hash rate as a proxy method. The Hash Rate is the speed at which a compute is completing an operation in the Bitcoin code. This increasing (as you can see above) is important to the mining community as it means two things: i) it means more miners are joining the network ii) it is harder for them to solve the computational arithmatic so they get more rewards for their efforts - in turn - enticing more miners. More miners is important for me as it means more talented people in the network as well as more user transactions solved a minute. So this proxy is the best I have.... so far. <br><br> <strong> Our Current Confidence:</strong> COMING SOON
+                    </p>
+                </section>
+                </section>
+                <section class='coming-soon-section' id="new-data-section" >
+                        <h1 class='data-section-title'> Question 6: Is the opportunity under or over-valued? </h1>
+                        <p class='data-section-sub'> (data - (Network Value to Transactions Ratio or NVT) </p>
+                        <section class='coming-soon'>
+                            <h1 class='coming-soon-title'> Coming Soon </h1>
+                        </section>
+          
+        
+                        <section class='title-section'>
+                            <p class='cross-page-text'> <strong> Reason for Inclusion </strong> 
+                                So, an investor knows there is a large market. They think that BTC is in the best position to win as there is good traction and a strong team. The last question an investor should always ask.... is the price right? Sadly, even if all the above are true, as we know their are massive bull and bear markets. 2017/18 wasn't the first boom and bust for BTC (it was actually its third cycle) nor will it be the last. You can use this ratio to work out not only 'should you invest' but also 'when you should invest'. On that note, I'll leave you hanging. The best metric to show this is the Network Value to Transactions ratio. I won't explain this yet as I'm waiting for some APIs for my math to be available so check back in on this one. <br><br> <strong> Current Status:</strong> COMING SOON
+                            </p>
+                        </section>
+                        </section>
+            </section>
+        </section>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+        </script>
+</body>
+
+</html>

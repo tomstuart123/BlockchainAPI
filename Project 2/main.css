@@ -1,0 +1,453 @@
+
+/* General */
+
+li {
+    font-weight: bold;
+}
+
+li:hover {
+    text-decoration: underline; 
+}
+
+p {
+    font-size: 12px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* top section */
+
+.section-hero {
+    background-image: url("assets/main-visual.JPG");
+    background-size: cover;
+    height: 650px;
+    max-width: 100%;
+  
+  }
+
+/* Nav */
+
+  .navigation-top {
+        color: black;
+        width: 100%;
+        height: 25px;
+        display: block;
+        text-align: center;
+    
+    }
+  
+
+
+  .toolbar-left {
+    margin: 0px 0px 0px 3%;
+    padding: 0px 0px 0px 0px;
+    float: left;
+    font-family: monospace;
+    width: 10%;
+    cursor: pointer;
+    
+  
+  }
+
+  .toolbar-left:hover {
+      text-decoration: underline;
+      text-decoration-style: solid;
+  }
+  
+  .toolbar {
+    margin: 18px 0px 0px 0px;
+    width: 68%;
+    padding: 0px 0px 0px 0px;
+    float: left;
+
+
+  }
+
+  .toolbar-right {
+    margin: 18px 3% 0px 0px;
+    padding: 0px 0px 0px 0px;
+    float: right;
+    width: 15%;
+  
+  }
+  
+ 
+  
+  .list-item-horizontal {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+  
+  }
+  
+  .link-top {
+    color: black;
+    text-decoration-line: none;
+  }
+
+  /* Hero content */
+  
+  .hero-text-section {
+    margin: 190px 0px 0px 5%;
+    width: 260px;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 38px;
+    margin-left: 0%;
+    height: auto;
+  }
+
+ #hero-text {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;    
+    opacity: 1.0;
+  }
+  
+  
+  #header-btn {
+    padding: 5px 0 5px 0px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25px;
+    height: 40px;
+    font-size: 10px;
+  }
+
+  .btn-generic {
+    border: 1.5px solid black;
+    color: black;
+    cursor: pointer;
+    border-color: white;
+    background-color: Transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+  }
+
+  .btn-generic:hover {
+    background:white;
+    color: black;
+  }
+
+  /* About Section */
+
+
+
+  .about-text-section {
+    height: 400px;
+    max-width: 100%;
+    opacity: 0.9;
+    font-size: 17px;
+    text-align: center;
+    background-color:  rgb(249, 234, 216);
+    line-height: 30px;
+    padding-top: 90px;
+  
+  }
+
+  #about-text {
+      margin: 0px 5% 0px 5%;
+
+  }
+
+  .visuals-holder {
+    
+    text-align: center;
+    height: 140px;
+    padding: 0px;
+    padding: 0px 40px 0px 70px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 45px 0% 0px 0%; 
+
+  }
+
+
+  .icon-holder {
+      width: 15%;
+      float: left;
+      margin: 20px 3% 0px 3%;
+    }
+
+  .maths-holder {
+    width: 10%;
+    float: left;
+    margin: 30px 10px 0px 10px;
+
+
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+
+/* chart section */
+.data-holder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: rgb(250, 247, 246);
+  padding-top: 30px;
+}
+
+
+
+
+#new-data-section {
+  text-align: center;
+  padding-top: 30px;
+  opacity: 0.9;
+  width: 500px;
+  margin: 0 auto;
+  /* height: 900px; */
+}
+
+
+
+.data-section-title {
+    font-size: 16px;
+    margin: 0px 0px 15px 0px;
+   
+}
+
+.data-section-sub {
+  font-size: 12px;
+  margin: 0px 0px 50px 0px;
+}
+
+
+#my-chart {
+    max-width: 75%;
+    height: auto;
+    max-height: 450px;
+    margin: 0 auto;   
+
+}
+
+#transactions-user-chart, #user-chart, #market-size-chart, #competitor-chart, #hash-chart,#value-chart {  
+    max-height: 380px;
+}
+
+
+.transactions-user-btn, .users-btn, .market-size-btn, .competitor-btn, .hash-btn, .value-btn {
+  height: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  border-color: rgba(0, 0, 0, 0.359); 
+  color:black;
+  margin: 15px 5px 30px 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 25px;
+
+}
+
+
+.transactions-user-btn:hover, .users-btn:hover, .market-size-btn:hover, .competitor-btn:hover, .hash-btn:hover, .value-btn:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+
+    
+}
+
+
+  /* title section */
+
+.title-section {
+    height: auto;
+    text-align: center;
+    padding: 1px;
+    opacity: 0.8;
+    background-color:   rgb(249, 234, 216);    
+}
+
+.cross-page-text {
+    margin: 30px 5% 30px 5%;
+    line-height: 17px;
+    color: black;
+    font-size: 13px;
+    height: 280px;
+    background-color:   rgb(249, 234, 216);
+} 
+
+#bottom-cross-page-text {
+ 
+  height: 180px;
+} 
+
+.coming-soon { 
+  height:375px;
+  max-height:400px;
+  color: Grey;
+  font-style: italic;
+  font-size: 30px;
+}
+
+
+
+
+@media screen and (min-width: 800px) { 
+
+
+  .list-item-horizontal {
+    font-size: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+  
+  }
+
+  .toolbar-left {
+    font-size: 18px;
+}
+
+.toolbar {
+  margin: 25px 0px 0px 0px;
+  
+
+
+}
+
+.toolbar-right {
+  margin: 25px 3% 0px 0px;
+ 
+
+}
+
+.hero-text-section {
+  margin: 190px 0px 0px 5%;
+  width: 260px;
+  font-weight: bold;
+  opacity: 1;
+  font-size: 38px;
+  margin-left: 3%;
+  height: auto;
+}
+
+#hero-text {
+  font-weight: bold;
+  font-size: 34px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-left: 5%;    
+  opacity: 1.0;
+}
+
+.section-hero {
+  background-image: url("assets/main-visual-crop.png");
+
+
+}
+
+
+}
+
+@media screen and (max-width: 450px) { 
+
+
+  .list-item-horizontal {
+    font-size: 16px;
+    margin-right: 2px;
+    margin-left: 2px;
+  
+  }
+
+  .toolbar-left {
+    font-size: 12px;
+}
+
+.toolbar {
+  margin: 10px 0px 0px 80px;
+  width: 30%;
+  line-height: 20px;
+  
+
+
+}
+
+.toolbar-right {
+  margin: 16px 5px 0px 0px;
+  width: 20%;
+ 
+
+}
+
+.hero-text-section {
+  margin: 190px 0px 0px 5%;
+  width: 260px;
+  font-weight: bold;
+  opacity: 1;
+  font-size: 38px;
+  margin-left: 3%;
+  height: auto;
+}
+
+#hero-text {
+  font-weight: bold;
+  font-size: 34px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-left: 5%;    
+  opacity: 1.0;
+}
+
+.section-hero {
+  background-image: url("assets/main-visual-crop-smalll.png");
+
+
+}
+
+.visuals-holder {
+    
+  text-align: center;
+  height: 140px;
+  padding: 0px;
+  padding: 0px 40px 0px 70px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0% 0px 0%; 
+
+}
+
+#bottom-cross-page-text {
+ 
+  height: auto;
+} 
+
+.cross-page-text {
+ 
+  height: auto;
+} 
+
+#new-data-section {
+  text-align: center;
+  padding-top: 30px;
+  opacity: 0.9;
+  width: 540px;
+  margin: 0 auto;
+  /* height: 900px; */
+}
+
+
+
+}
+
