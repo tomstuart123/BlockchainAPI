@@ -45,11 +45,17 @@ body {
     margin: 0px 0px 0px 3%;
     padding: 0px 0px 0px 0px;
     float: left;
-    font-family: monospace;
+    
     width: 10%;
     cursor: pointer;
     
   
+  }
+
+  .toolbar-left a {
+    font-family: monospace;
+    color: black;
+    text-decoration: none;
   }
 
   .toolbar-left:hover {

@@ -870,7 +870,10 @@ blockApp.init = function () {
         blockApp.checkClick('.market-size-btn');
         blockApp.checkClick('.competitor-btn');
         blockApp.checkClick('.hash-btn');
-
+        $('.dataTop').on('click', function (event) {
+            window.scrollBy(0, 1150);
+            console.log('clicked')
+        })
         // ensure we knwo when page loads
    
 }
